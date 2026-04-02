@@ -2,7 +2,6 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { ApiProvider } from "./context/ApiContext";
-import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Analytics/>
+
         </Routes>
       </HashRouter>
     </ApiProvider>
